@@ -32,7 +32,7 @@
 
 
         @media screen and (max-width: 1000px) {
-            video{
+            video {
                 width: 30px !important;
             }
         }
@@ -42,7 +42,14 @@
         .content-area {
             margin-left: 5%;
             margin-right: 5%;
-            background-color: rgba(0, 0, 0, 0.829);
+            /* background-color: rgba(0, 0, 0, 0.829); */
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.01);
         }
 
         .center {
@@ -51,7 +58,7 @@
         }
 
         .img-background {
-            background-image: url("./$MIKE/BG/bg-1.gif");
+            background-image: url("./MIKEGIF1.gif");
             background-size: 100%;
             background-repeat: repeat-y;
             background-attachment: fixed;
@@ -243,7 +250,7 @@
         }
 
         .addy {
-            color: turquoise;
+            color: orange;
         }
     </style>
     <script>
@@ -257,7 +264,7 @@
 
 <body class="img-background">
 
-
+    <!-- 
     <div class="modal-wrapper" id="modal">
         <div class="modal">
             <div class="modal-header">
@@ -282,26 +289,32 @@
                 <button class="bluepill" id="redirectModalBtn">No </button>
             </div>
         </div>
-    </div>
+    </div> -->
+
     <div style="width:100%">
         <div class="header">
             <div class="content-area">
                 <nav class="top-nav" style="font-size:24px;">
                     <a href="#">Welcome MIKE TYSON(Ticker:$MIKE)</a>
-                    <img class="header-img" src="funny-pictures/emerald-red.png">
+                    <img class="header-img" src="default/logo.png">
                     <a href="#HowToBuy">How to Buy</a>
-                    <img class="header-img" src="funny-pictures/emerald-blue.png">
+                    <img class="header-img" src="default/logo-2.png">
                     <a href="#About">About</a>
-                    <img class="header-img" src="funny-pictures/emerald-orange.png">
+                    <img class="header-img" src="default/logo-3.png">
+
                     <a href="#Tokenomics">Tokenomics</a>
-                    <img class="header-img" src="funny-pictures/emerald-teal.png">
+                    <img class="header-img" src="default/logo.png">
+
                     <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x01960a605dc116fb88c5d687c8605fb1cccd17aa"
                         target="_blank">Chart</a>
-                    <img class="header-img" src="funny-pictures/emerald-red.png">
+                    <img class="header-img" src="default/logo-2.png">
+
                     <a href="#FunnyPictures">Funny Pictures</a>
-                    <img class="header-img" src="funny-pictures/emerald-orange.png">
+                    <img class="header-img" src="default/logo-3.png">
+
                     <a href="http://t.me/" target="_blank">Telegram</a>
-                    <img class="header-img" src="funny-pictures/emerald-teal.png">
+                    <img class="header-img" src="default/logo.png">
+
                     <a href="http://x.com/" target="_blank">Twitter</a>
 
                     <img class="header-img" src="funny-pictures/emerald-silver.png">
@@ -337,10 +350,12 @@
 
     <style>
         .u-class-x {
-           text-align: center;
+            text-align: center;
+            /* display: none; */
         }
 
-        .content-area, .HowToBuy{
+        .content-area,
+        .HowToBuy {
             text-align: center;
         }
     </style>
@@ -353,31 +368,31 @@
         <h2 id="HowToBuy">How to Buy</h2>
 
         <div class="u-class-x">
-        <ol class="HowToBuy">
-            <li>
-                Download the Metamask extension and create an account: <a target="_blank"
-                    href="https://metamask.io/">MetaMask.io</a>
-            </li>
-            <li>
-                Connect MetaMask to the Uniswap acquire some $MIKE</b>
-                <br />
-                (<a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xb9e0EFb35A7aA42a80aa39758bbd5Ee6911bf543"
-                    target="_blank">Uniswap</a> can be used.)
-            </li></br>
+            <ol class="HowToBuy">
+                <li>
+                    Download the Metamask extension and create an account: <a target="_blank"
+                        href="https://metamask.io/">MetaMask.io</a>
+                </li>
+                <li>
+                    Connect MetaMask to the Uniswap acquire some $MIKE</b>
+                    <br />
+                    (<a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xb9e0EFb35A7aA42a80aa39758bbd5Ee6911bf543"
+                        target="_blank">Uniswap</a> can be used.)
+                </li></br>
 
 
-        </ol>
+            </ol>
 
-        <div>
-            <img src="/MIKEBIRDY.jpg" alt="" width="300px">
+            <div>
+                <img src="/MIKEBIRDY.jpg" alt="" width="300px">
+            </div>
         </div>
-    </div>
 
         <!-- <p>Website -> india ad campaign -> coingecko -> coinmarketcap</p> -->
         <br>
         <hr><br>
         <h2 id="About"> Introducing MIKE: MIKE TYSON Token</h2>
-        <p style="font-size: 24px; color:turquoise">
+        <p style="font-size: 24px; color:orange">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor magni iste cupiditate voluptas laborum
             distinctio, unde perspiciatis velit recusandae reiciendis, quibusdam ipsam, porro odit dolores ad
             perferendis explicabo expedita rem.
@@ -398,11 +413,17 @@
             <p><img style="width:400px;" src="default/logo-2.png"></p>
         </div>
         <br>
+
+        <style>
+            video {
+                width: 500px !important;
+            }
+        </style>
         <video src="/mike.mp4" controls autoplay loop></video>
         <hr><br>
         <img style="position:relative; float: right;" src="default/logo-3.png" width="200px">
         <h2 id="Tokenomics">Tokenomics</h2>
-        <p style="font-size: 24px; color:turquoise">
+        <p style="font-size: 24px; color:orange">
 
             <!-- The MIKE TYSON smart contract has 0 tax on all buys and sells. -->
             </br>
@@ -416,43 +437,64 @@
         <hr><br>
         <h2 id="FunnyPictures">Funny Pictures And Videos</h2>
 
-        <textarea style="width:400px; height:300px; border-color: cyan; border-width: 1em;">
-MIKE TYSON ($MIKE)
+        <style>
+            .spin-1 {
+                animation: spin 4s linear infinite;
+            }
+
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .spin-2 {
+                animation: spin 4s linear infinite;
+            }
+
+            @keyframes spin2 {
+                from {
+                    transform: rotate(-0deg);
+                }
+
+                to {
+                    transform: rotate(-360deg);
+                }
+            }
+        </style>
+
+        <img src="default/logo-3.png" alt="" width="600px" class="spin-1">
 
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi inventore non, porro nemo vitae a accusamus minima dolorem commodi.
+        <img src="default/logo.png" style="max-width: 400px;" class="spin-2">
 
-                </textarea>
-        <img src="default/logo-3.png" alt="" width="600px">
-
-        <textarea style="width:400px; height:300px; border-color: cyan; border-width: 1em;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda facilis odit aut voluptate eligendi iusto ullam nam impedit laboriosam doloribus voluptates, nobis, necessitatibus officiis amet. Repellendus dicta sit qui, laborum laboriosam ipsum! Eveniet obcaecati aliquid dignissimos eligendi facilis provident vero hic saepe ad. Eos enim minus sapiente eveniet et.
-                </textarea>
-        <img src="default/logo.png" style="max-width: 400px;">
-        <textarea style="width:400px; height:300px; border-color: cyan; border-width: 1em;">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo itaque delectus temporibus. Architecto sunt minima praesentium ipsam asperiores excepturi cupiditate aut maiores, omnis provident, reprehenderit nam est dolorem dolorum ex tenetur quam, error nihil inventore autem. Ipsam, doloremque nisi. Accusamus.
-        </textarea>
 
         </p>
 
-        <img src="/MIKEGIF1.gif" alt="Meme/Gif Here">
-        <img src="/MIKEGIF2.gif" alt="Meme/Gif Here">
+        <marquee behavior="" direction="">
 
-        <img src="https://i.giphy.com/6rTQC2UiX9AOI.gif" alt="Meme/Gif Here">
+            <img src="/MIKEGIF1.gif" alt="Meme/Gif Here">
+            <img src="/MIKEGIF2.gif" alt="Meme/Gif Here">
 
-        <img src="/MIKEIMG1.jpg" alt="Meme/Gif Here">
+            <img src="https://i.giphy.com/6rTQC2UiX9AOI.gif" alt="Meme/Gif Here">
 
-        <img src="/MIKEIMG2.jpg" alt="Meme/Gif Here">
+            <img src="/MIKEIMG1.jpg" alt="Meme/Gif Here">
 
-        <img src="/quote2.jpg" alt="Meme/Gif Here">
+            <img src="/MIKEIMG2.jpg" alt="Meme/Gif Here">
 
-        <img src="/quote1.jpg" alt="Meme/Gif Here">
+            <img src="/quote2.jpg" alt="Meme/Gif Here" width="500px">
 
-        <img src="/quote3.jpg" alt="Meme/Gif Here">
+            <img src="/quote1.jpg" alt="Meme/Gif Here">
 
-        <img src="/quote4.jpg" alt="Meme/Gif Here">
+            <img src="/quote3.jpg" alt="Meme/Gif Here">
 
+            <img src="/quote4.jpg" alt="Meme/Gif Here" width="600px">
 
+        </marquee>
 
 
 
